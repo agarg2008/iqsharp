@@ -29,4 +29,14 @@
     <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="SimulatorSkeleton">
+      <HintPath>..\..\customlibs\SimulatorSkeleton.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="libs\" />
+  </ItemGroup>
+
 </Project>
