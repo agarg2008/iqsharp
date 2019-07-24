@@ -75,7 +75,7 @@ namespace Microsoft.Quantum.IQSharp
         /// <summary>
         /// The list of currently available snippets.
         /// </summary>
-        internal IEnumerable<Snippet> Items { get; set; }
+        public IEnumerable<Snippet> Items { get; set; }
 
         /// <summary>
         /// The list of Q# operations available across all snippets.

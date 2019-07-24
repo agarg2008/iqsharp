@@ -98,7 +98,7 @@ namespace Microsoft.Quantum.IQSharp
         /// <summary>
         /// Builds the corresponding .net core assembly from the Q# syntax tree.
         /// </summary>
-        private static AssemblyInfo BuildAssembly(Uri[] fileNames, QsCompiler.SyntaxTree.QsNamespace[] syntaxTree, IEnumerable<MetadataReference> references, QSharpLogger logger, string targetDll)
+        public static AssemblyInfo BuildAssembly(Uri[] fileNames, QsCompiler.SyntaxTree.QsNamespace[] syntaxTree, IEnumerable<MetadataReference> references, QSharpLogger logger, string targetDll)
         {
             if (logger.HasErrors) return null;
 
