@@ -1,5 +1,5 @@
 # The same image used by mybinder.org
-FROM python:3.7-slim
+FROM python:3.7-slim-stretch
 
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
@@ -93,7 +93,7 @@ ENV PATH=$PATH:${HOME}/dotnet:${HOME}/.dotnet/tools \
 # Install IQ# and the project templates, using the NuGet packages from the
 # build context.
 ARG IQSHARP_VERSION
-RUN dotnet new -i "Microsoft.Quantum.ProjectTemplates::0.8.1907.1701" && \
+RUN dotnet new -i "Microsoft.Quantum.ProjectTemplates::0.8.1908.202-beta" && \
     dotnet tool install \
            --global \
            Microsoft.Quantum.IQSharp \
